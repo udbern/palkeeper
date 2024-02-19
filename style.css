@@ -378,6 +378,7 @@ h2 {
   }
 
   & .main-nav {
+    
     height: 50px;
     display: flex;
     align-items: center;
@@ -391,7 +392,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 
 
     & li {
@@ -593,7 +594,9 @@ img {
 
   & .main-header {}
 
-  & .main-nav {}
+  & .main-nav {
+    
+  }
 
   & .mainnav-tabs {
     padding: 5px;
@@ -637,6 +640,8 @@ img {
 
   .menu-open {
     display: flex;
+    font-size: 20px;
+    margin-left: 10px;
 
   }
 
@@ -648,12 +653,12 @@ img {
   .main-content {
     width: 100%;
     left: 0;
+    & .main-nav {
+      
+      
+    }
+
   }
-
-
-  & .main-header {}
-
-  & .main-nav {}
 
   & .mainnav-tabs {
     padding: 5px;
@@ -661,14 +666,15 @@ img {
 
 
     & li {
+      font-size: 10px;
+      
 
       & a {
-        color: #d87728;
-
-        & i {
-          font-size: small;
-        }
-
+        
+        display: flex;
+        align-items: center;
+        font-size: 3px;
+        
       }
 
 
