@@ -1,17 +1,24 @@
-const menuOpen = document.getElementById('menu-open');
-const sidebar = document.querySelector('.sidebar');
+const menuOpen = document.querySelector('.menu-open');
+const menuClose = document.querySelector('.menu-close');
+const sideSection = document.querySelector('.sidesection');
+
+sideSection.style.animation = 'slide-in 0.5s ease-in-out'; // Add animation to sidesection
 
 menuOpen.addEventListener('click', () => {
-  sidebar.style.left = '0';
-  sidebar.style.transition = 'left 0.5s ease-in-out';
+  sideSection.style.transition = 'transform 0.5s ease-in-out';
+  sideSection.style.transform = 'translateX(0)';
+  sideSection.style.display = 'block'; // Display sidsection when menuOpen is clicked
 });
-
-const menuClose = document.querySelector('.menu-close');
 
 menuClose.addEventListener('click', () => {
-  sidebar.style.left = '-100%';
-  sidebar.style.transition = 'left 0.5s ease-in-out';
+  sideSection.style.transition = 'transform 0.5s ease-in-out';
+  sideSection.style.transform = 'translateX(-400px)';
+  sideSection.style.display = 'none'; // Hide sidsection when menuClose is clicked
 });
+
+
+
+
 
 
 

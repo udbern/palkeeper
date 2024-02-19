@@ -17,23 +17,34 @@ i {
 /* universal styling */
 
 /* sidbar styling */
-.sidebar {
+
+.sidesection {
   position: fixed;
   width: 400px;
   top: 0;
   left: 0;
-  height: 100%;
-  border-right: #333 1px solid;
-  padding: 10px;
+  z-index: 1000;
   box-shadow: 1px 5px 5px #aaaaaa;
   background-color: #f0f5ef;
-  z-index: 1000;
-}
-.menu-close{
-  display: none;
-  
+  height: 100%;
+  padding: 10px;
 
 }
+
+
+.sidebar {
+
+  padding: 10px;
+
+}
+
+.menu-close,
+.menu-open {
+  display: none;
+}
+
+
+
 .sidebar-header {
   width: 100%;
   display: flex;
@@ -439,7 +450,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 10px;
-  
+
   gap: 10px;
 
 }
@@ -514,15 +525,13 @@ img {
   background-color: #d87728;
   margin-bottom: 15px;
   border-radius: 10px;
-  margin: 10px;
-
-
-
+  margin: 5px;
 }
 
 .card-divider {
   height: 1px;
   background-color: #030303;
+
 }
 
 .card-reactions {
@@ -530,9 +539,9 @@ img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  border: 2px sloid green;
   margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   & i {
     font-size: 20px;
@@ -555,9 +564,7 @@ img {
 }
 
 
-@media only screen and (max-width: 475px) {
-
-}
+@media only screen and (max-width: 475px) {}
 
 
 
@@ -565,15 +572,13 @@ img {
 
 
 
-@media only screen and (max-width: 680px) {
-
-}
+@media only screen and (max-width: 680px) {}
 
 
 
 
 @media only screen and (max-width: 768px) {
-  
+
 
   .main-content {
     width: 100%;
@@ -583,7 +588,7 @@ img {
 
   .main-container {
     flex-wrap: wrap;
-    
+
   }
 
   & .main-header {}
@@ -620,20 +625,23 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
-  .sidebar {
-    
-    height: 100vh;
-    z-index: 1000;
-    
+
+  .sidesection {
+    display: none;
   }
 
-  .menu-close{
+  .menu-close {
     display: flex;
     justify-content: end;
   }
 
+  .menu-open {
+    display: flex;
+
+  }
+
   .card {
-    
+
     margin-top: 20px;
   }
 
