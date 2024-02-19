@@ -29,7 +29,11 @@ i {
   background-color: #f0f5ef;
   z-index: 1000;
 }
+.menu-close{
+  display: none;
+  
 
+}
 .sidebar-header {
   width: 100%;
   display: flex;
@@ -143,6 +147,10 @@ h1 {
   background-color: #030303;
 }
 
+.settings-menu span {
+  margin-left: 10px;
+  color: #d87728;
+}
 
 
 .tab-content-wrapper {
@@ -150,7 +158,6 @@ h1 {
   height: 70vh;
   scrollbar-color: rgb(143, 141, 141);
   scrollbar-width: thin;
-  border: 2px solid red;
 }
 
 .contemtent-section {
@@ -174,7 +181,8 @@ h1 {
 
 }
 
-.setting-item,
+
+
 .submenu {
   display: flex;
   flex-direction: column;
@@ -182,16 +190,22 @@ h1 {
   margin-top: 5px;
   margin-left: 30px;
   list-style-type: none;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
-.settings-menu .settings-item span {
-  margin-right: 10px;
-}
-
-.settings-menu .settings-item.active span {
-  color: blue;
-}
 
 .settings-menu,
 h2 {
@@ -425,26 +439,18 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin-top: 20px;
-  gap: 5px;
-}
-
-
-.main-card {
-  flex: 2;
-  margin-right: 20px;
-  margin-left: 20px;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
+  
+  gap: 10px;
 
 }
+
 
 .card {
+
   width: 100%;
-  overflow: hidden;
+  margin-top: 20px;
   transition: transform 0.4s ease;
-  box-shadow: 1px 1px 1px 2px #f0eeee;
+  box-shadow: 1px 1px 2px 2px #f0eeee;
   border-radius: 10px;
 
 }
@@ -545,12 +551,13 @@ img {
 
 
 .main-advert {
-  flex: 1;
   border: rgb(30, 255, 0) 1px solid
 }
 
 
-@media only screen and (max-width: 475px) {}
+@media only screen and (max-width: 475px) {
+
+}
 
 
 
@@ -558,25 +565,28 @@ img {
 
 
 
-@media only screen and (max-width: 680px) {}
+@media only screen and (max-width: 680px) {
+
+}
 
 
 
 
 @media only screen and (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    left: -100%;
-  }
+  
 
   .main-content {
     width: 100%;
     left: 0;
+
   }
 
-  & .main-header {
-    width: 100%;
+  .main-container {
+    flex-wrap: wrap;
+    
   }
+
+  & .main-header {}
 
   & .main-nav {}
 
@@ -588,7 +598,7 @@ img {
     & li {
 
       & a {
-        color: rgb(148, 11, 11);
+        color: rgb(68, 2, 2);
 
         & i {
           font-size: small;
@@ -604,23 +614,34 @@ img {
     display: none;
   }
 
-  .main-advert{
-    display: none;
-  }
+  .main-advert {}
 
 
 }
 
 @media only screen and (max-width: 1024px) {
   .sidebar {
-    width: 100%;
-    left: -100%;
+    
+    height: 100vh;
+    z-index: 1000;
+    
+  }
+
+  .menu-close{
+    display: flex;
+    justify-content: end;
+  }
+
+  .card {
+    
+    margin-top: 20px;
   }
 
   .main-content {
     width: 100%;
     left: 0;
   }
+
 
   & .main-header {}
 
@@ -634,7 +655,7 @@ img {
     & li {
 
       & a {
-        color: darkblue;
+        color: #d87728;
 
         & i {
           font-size: small;
