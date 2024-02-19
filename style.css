@@ -10,7 +10,7 @@ a {
   color: #333;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -172,8 +172,8 @@ h1 {
 .tab-content-wrapper {
   overflow-y: auto;
   height: 70vh;
-  scrollbar-color: rgb(143, 141, 141);
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 .contemtent-section {
@@ -197,8 +197,8 @@ h1 {
 
 }
 
-.settings{
-  font-size: 15px ;
+.settings {
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -366,10 +366,134 @@ h2 {
 
 /*SERVICES SECTION STYLING ENDS HERE*/
 
+.wallet-card {
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #00a651;
+  border-radius: 15px;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.total-rewards {
+  color: white;
+  text-align: center;
+  line-height: 20px;
+
+}
+
+.reward-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: white;
+  font-size: 20px;
+  padding: 2px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.total-reward {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rewards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-reward,
+.redeemed-reward {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.current-reward p {
+  color: #00a651;
+}
+
+.current-reward .reward {
+  color: #3d3d3d;
+}
+
+.redeemed-reward .redeems {
+  color: #C42026;
+}
+
+.redeemed-reward .redeem {
+  color: #3d3d3d;
+}
+
+.tab-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.tab-redeemed,
+.tab-rewarded {
+  margin-top: 10px;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.reward-header {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.reward-card{
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+  border-bottom: 1px solid rgb(129, 129, 129) ;
+}
+.reward-profile{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.reward-picture {
+  width: 60px;
+  height: 60px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+  }
 
 
+}
+.reward-name{
+  font-size: 12px;
 
-
+}
 
 
 /*MAIN-CONTENT SECTION STYLING STARTS HERE*/
@@ -383,7 +507,8 @@ h2 {
   background-color: #d3eada;
   position: sticky;
   top: 0;
-  
+
+
 }
 
 
@@ -394,21 +519,22 @@ h2 {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
-.mainnav-tabs{
+.mainnav-tabs {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  & i{
+  & i {
     margin-right: 5px;
   }
 
-  & a.active{
+  & a.active {
     text-decoration: underline;
   }
-  
+
 }
 
 
@@ -442,7 +568,7 @@ h2 {
   margin-left: 5px;
 }
 
-.logout{
+.logout {
   margin: auto;
 }
 
@@ -515,7 +641,7 @@ img {
 }
 
 .card-body {
-padding: 20px;
+  padding: 20px;
   height: 300px;
   display: flex;
   align-items: center;
@@ -565,7 +691,7 @@ padding: 20px;
   transition: transform 0.4s ease;
   height: 100%;
   background-color: white;
-  
+
 }
 
 .clip-details {
@@ -584,7 +710,8 @@ padding: 20px;
   padding: 2px;
 
 
-  & h2, p {
+  & h2,
+  p {
     text-transform: capitalize;
     font-size: 12px;
   }
@@ -617,7 +744,8 @@ padding: 20px;
 
   }
 }
-.clip-tag{
+
+.clip-tag {
   padding-left: 20px;
   text-align: start;
   margin-top: 10px;
@@ -640,17 +768,18 @@ padding: 20px;
   text-align: center;
 }
 
-.clipt{
+.clipt {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.clip-by, .clip-time{
+.clip-by,
+.clip-time {
   color: #000000;
   font-size: 10px;
   text-transform: capitalize;
-  padding-left: 10px ;
+  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -660,7 +789,7 @@ padding: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-top: 10px;
-  
+
 }
 
 .clip-reactions {
@@ -670,7 +799,7 @@ padding: 20px;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  
+
 
   & i {
     font-size: 12px;
@@ -725,9 +854,9 @@ padding: 20px;
     flex-wrap: wrap;
   }
 
- 
 
-  .logout{
+
+  .logout {
     font-size: 10px;
     text-transform: none;
   }
@@ -736,7 +865,7 @@ padding: 20px;
     display: none;
   }
 
-  
+
 
 
 }
@@ -767,34 +896,31 @@ padding: 20px;
   .main-content {
     width: 100%;
     left: 0;
-    & .main-nav {
-      
-      
-    }
+
+    & .main-nav {}
 
   }
 
   & .mainnav-tabs {
     padding: 5px;
     gap: 5px;
-    
+
 
 
     & li {
-      border: solid 2px red;
-      
+
       & a {
         display: flex;
         align-items: center;
         font-size: 10px;
-        
+
       }
 
 
     }
   }
 
-  
+
 
 
 
