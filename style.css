@@ -1104,9 +1104,7 @@ img {
   }
 
 
-  .search-bar {
-    display: none;
-  }
+ 
 
 
 
@@ -1122,7 +1120,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 7px;
+    gap: 10px;
   
     & #main-li {
       display: flex;
