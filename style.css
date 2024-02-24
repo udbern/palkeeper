@@ -622,7 +622,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 7px;
 
   & #main-li {
     display: flex;
@@ -658,9 +658,9 @@ h2 {
   }
 
   & .main-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
     display: flex;
     align-items: center;
   }
@@ -673,6 +673,7 @@ h2 {
   position: relative;
   border-radius: 20px;
   height: 35px;
+  
 }
 
 .search-bar input {
@@ -680,8 +681,17 @@ h2 {
   border-radius: 5px;
   height: 100%;
   background-color: transparent;
-  outline: gray;
+  outline: none;
   color: whitesmoke;
+  border: none;
+  width: 0;
+  opacity: 0; /* Hide the input */
+  border: #dbd9d9 solid 2px;
+}
+
+.search-bar.active input {
+  width: calc(100% - 40px);
+  opacity: 1; /* Show the input when active */
 }
 
 .search-bar button {
@@ -695,7 +705,22 @@ h2 {
   background-color: transparent;
   margin-left: 5px;
   outline: none;
+  transition: opacity 0.3s ease;
+  
 }
+
+
+
+.logout {
+  margin: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #000000;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
 
 .logout {
   margin: auto;
@@ -703,6 +728,7 @@ h2 {
   text-decoration: none;
   color: #fffdfd;
 }
+
 
 
 .main-container {
@@ -1040,17 +1066,9 @@ img {
 @media only screen and (max-width: 768px) {
 
 
-  .main-content {
-    width: 100%;
-    left: 0;
+  
 
-  }
-
-  .main-icon {
-    width: 15px;
-    height: 15px;
-   
-  }
+ 
   .main-card,
   .advert-card {
     overflow-y: visible;
@@ -1096,6 +1114,73 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .mainnav-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7px;
+  
+    & #main-li {
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      & span {
+        text-transform: capitalize;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 13px;
+      }
+  
+      & #img2 {
+        display: none;
+        color: #F08B39;
+      }
+  
+      &:hover #img1 {
+        display: none;
+      }
+  
+      &:hover #img2 {
+        display: flex;
+      }
+  
+      &:hover span {
+        color: black;
+      }
+    }
+  
+    & .main-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 2px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+
+  .card-icons {
+    & img{
+      width: 20px;
+      height: 20px;
+    }
+    
+  
+    
+  }
+
+  .main-content {
+    width: 100%;
+    left: 0;
+
+  }
 
   .sidesection {
     display: none;

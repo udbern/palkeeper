@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const chevronIcons = document.querySelectorAll('#chevron-right');
+  const chevronIcons = document.querySelectorAll('.chevron-right');
 
   // Initially hide all submenus
   const submenus = document.querySelectorAll('.submenu');
@@ -20,5 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
 
