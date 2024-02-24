@@ -89,6 +89,7 @@ li {
 }
 
 
+
 .sidesection {
   position: fixed;
   width: 400px;
@@ -1044,6 +1045,12 @@ img {
     left: 0;
 
   }
+
+  .main-icon {
+    width: 15px;
+    height: 15px;
+   
+  }
   .main-card,
   .advert-card {
     overflow-y: visible;
@@ -1092,11 +1099,13 @@ img {
 
   .sidesection {
     display: none;
+    
   }
-
+  
   .menu-close {
     display: flex;
-    justify-content: end;
+    margin-left: 350px;
+    
   }
 
   .menu-open {
