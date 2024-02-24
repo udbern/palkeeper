@@ -1112,7 +1112,12 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
-    .logout{
+    
+   .search-bar{
+       display: none;
+     }
+
+     .logout{
        display: none;
      }
 
