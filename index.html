@@ -12,23 +12,27 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
+
+
 
 <body>
   <!--------sidebar section--------------->
   <section class="sidesection">
     <div class="sidebar">
       <div class="menu-close">
-        <i class="fa-solid fa-x"></i>
+        <img src="assets/icons/cross.png" alt="">
       </div>
       <!------sidevar nav seaction-------------------------------------------->
       <div class="sidebar-header">
         <!--------sidenav header---------------------------->
-        <div class="sidebar-logo">
-          <a href="index.html">
-            <h1>Palkeeper</h1>
+        <div class="logo">
+          <a href="index.html" class="sidebar-logo">
+            <img src="assets/icons/palkeeper.png" alt=" palkeeper.logo">
           </a>
         </div>
         <div class="sidebar-profile">
@@ -36,13 +40,13 @@
         </div>
         <div class="sidebar-tabs">
           <div class="tab" data-content="settings">
-            <i class="fa-solid fa-gear"></i>
+            <img class="icon-settings" src="assets/icons/settings (1).png" alt="">
           </div>
           <div class="tab" data-content="tickets">
-            <i class="fa-solid fa-ticket"></i>
+            <img class="icon-tickets" src="assets/icons/laptop.png" alt="">
           </div>
           <div class="tab" data-content="notifications">
-            <i class="fas fa-bell"></i>
+            <img class="icon-notification" src="assets/icons/notification-1.png" alt="">
           </div>
         </div>
       </div>
@@ -50,7 +54,7 @@
 
       <!--------sidebar user details---------------------------->
       <div class="user-details">
-        <p>John Doe</p>
+        <p>palkeeper <span>John Doe</span></p>
         <div class="user-contact">
           <p>john@example.com</p>
           <p> 123-456-7890</p>
@@ -61,32 +65,42 @@
 
       <!--------user tab section---------------------------->
       <div class="user-tabsection">
-        <ul class="tabs">
-          <li class="tab active" data-content="service">
-            <i class="fas fa-cogs"></i> <span class="span">Service</span>
-          </li>
-          <li class="tab" data-content="pals">
-            <i class="fas fa-user-friends"></i><span class="span">pals</span>
-          </li>
-          <li class="tab" data-content="clips">
-            <i class="fas fa-video"></i><span class="span">clips</span>
-          </li>
-          <li class="tab" data-content="wallet">
-            <i class="fas fa-wallet"></i><span class="span">wallet</span>
-          </li>
-          <li class="tab" data-content="watch-me">
-            <i class="fas fa-eye"></i><span class="span">watch </span>
-          </li>
-          <li class="tab" data-content="post">
-            <i class="fas fa-pencil-alt"></i><span class="span">post</span>
-          </li>
-          <li class="tab" data-content="location">
-            <i class="fas fa-map-marker-alt"></i><span class="span">location</span>
-          </li>
-          <li class="tab" data-content="message">
-            <i class="fas fa-envelope"></i><span class="span">message</span>
-          </li>
-        </ul>
+        <img src="assets/icons/back.png" id="icon-arrow" class="icon-back" alt="arrow-left.png">
+        <div class="tabs">
+          <div class="tab active" data-content="service">
+            <img class="icon-tab1" src="assets/icons/technical-support.png" alt="service.png">
+            <span class="tab-name">service</span>
+          </div>
+          <div class="tab" data-content="pals">
+            <img class="icon-tab2" src="assets/icons/people.png" alt="pals.png">
+            <span class="tab-name">pals</span>
+          </div>
+          <div class="tab" data-content="clips">
+            <img class="icon-tab3" src="assets/icons/paperclip.png" alt="">
+            <span class="tab-name">clips</span>
+          </div>
+          <div class="tab" data-content="wallet">
+            <img class="icon-tab3" src="assets/icons/cash-managements.png" alt="">
+            <span class="tab-name">wallet</span>
+          </div>
+          <div class="tab" data-content="watch-me">
+            <img class="icon-tab3" src="assets/icons/searching.png" alt="">
+            <span class="tab-name">watch</span>
+          </div>
+          <div class="tab" data-content="post">
+            <img class="icon-tab3" src="assets/icons/online.png" alt="">
+            <span class="tab-name">post</span>
+          </div>
+          <div class="tab" data-content="location">
+            <img class="icon-tab3" src="assets/icons/location.png" alt="">
+            <span class="tab-name">loaction</span>
+          </div>
+          <div class="tab" data-content="message">
+            <img class="icon-tab3" src="assets/icons/chatting.png" alt="">
+            <span class="tab-name">message</span>
+          </div>
+        </div>
+        <img src="assets/icons/next.png" id="icon-arrow" class="icon-right" alt="arrow-right.png">
       </div>
       <!--------user tab section---------------------------->
 
@@ -104,8 +118,11 @@
               <h2>settings</h2>
               <ul class="settings-list">
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-sliders"></i></span> <a class="settings" href="#profile">profile <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/user.png" alt="user-icon"></span> <a class="settings"
+                      href="#settings">Pofile <img class="chevron-right" id="chevron-right"
+                        src="assets/icons/right-chevron.png" alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">change password</a></li>
                     <li><a href="#">mange account</a></li>
@@ -114,8 +131,11 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-sliders"></i></span> <a class="settings" href="#preferences">Prefernces <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/filter.png" alt="preferences-icon"></span> <a class="settings"
+                      href="#preferences">preferences <img class="chevron-right" src="assets/icons/right-chevron.png"
+                        alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">Email</a></li>
                     <li><a href="#">SMS</a></li>
@@ -123,8 +143,10 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-bell"></i></span> <a class="settings" href="#sos">sos <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/emergency-call.png" alt="sos-icon"></span> <a class="settings"
+                      href="#sos">SOS<img class="chevron-right" src="assets/icons/right-chevron.png" alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">emergency contact</a></li>
                     <li><a href="#">sos sessions</a></li>
@@ -132,8 +154,11 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-gear"></i></span><a class="settings" href="#support">support <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/technical-support (1).png" alt="support-icon"></span> <a
+                      class="settings" href="#support">Support <img class="chevron-right"
+                        src="assets/icons/right-chevron.png" alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">help center</a></li>
                     <li><a href="#">FAQs</a></li>
@@ -141,8 +166,10 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-gavel"></i></span><a class="settings" href="#">Legal <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/auction.png" alt="legal-icon"></span> <a class="settings"
+                      href="#legal">legal <img class="chevron-right" src="assets/icons/right-chevron.png" alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">terms of service</a></li>
                     <li><a href="#">privacy policy</a></li>
@@ -152,8 +179,11 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-person"></i></span><a class="settings" href="#">referals <i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/exchange.png" alt="referals-icon"></span> <a class="settings"
+                      href="#referals">referals <img class="chevron-right" src="assets/icons/right-chevron.png"
+                        alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">terms of service</a></li>
                     <li><a href="#">privacy policy</a></li>
@@ -163,8 +193,10 @@
                   </ul>
                 </li>
                 <li class="settings-item">
-                  <span><i class="fa-solid fa-share"></i></span><a class="settings" href="#">share<i
-                      class="fas fa-chevron-right"></i></a>
+                  <div class="setting-icon">
+                    <span><img src="assets/icons/social.png" alt="share-icon"></span> <a class="settings"
+                      href="#share">share <img class="chevron-right" src="assets/icons/right-chevron.png" alt=""></a>
+                  </div>
                   <ul class="submenu">
                     <li><a href="#">terms of service</a></li>
                     <li><a href="#">privacy policy</a></li>
@@ -338,54 +370,58 @@
             <div class="icon-grid">
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/battery.png" alt="battery.png">
+                  <img src="assets/icons/accumulator.png" alt="battery.png">
                 </div>
                 <p>jump battery</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/flat tire.png" alt="">
+                  <img src="assets/icons/flat-tire.png" alt="">
                 </div>
 
                 <p>flat tire</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/fuel out.png" alt="">
+                  <img src="assets/icons/dispenser.png" alt="">
                 </div>
 
                 <p>fuel out</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/towing (1).png" alt="">
+                  <img src="assets/icons/tow-truck.png" alt="">
                 </div>
                 <p>towing</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="./assets/icons/key locked.png" alt="">
+                  <img src="./assets/icons/key.png" alt="">
                 </div>
                 <p>key lockout</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/OBD.png" alt="">
+                  <img src="assets/icons/inspection.png" alt="">
                 </div>
                 <p>OBD</p>
               </div>
               <div class="icon">
                 <div class="img-icon">
-                  <img src="assets/icons/fuel (2).png" alt="">
+                  <img src="assets/icons/generator.png" alt="">
                 </div>
                 <p>fuel</p>
               </div>
               <div class="icon">
-                <img src="" alt="">
+                <div class="img-icon">
+                  <img src="assets/icons/house-keeping.png" alt="">
+                </div>
                 <p>chores</p>
               </div>
               <div class="icon">
-                <img src="" alt="">
+                <div class="img-icon">
+                  <img src="assets/icons/bullhorn.png" alt="">
+                </div>
                 <p>advertise</p>
               </div>
             </div>
@@ -596,7 +632,8 @@
                   <p>total rewards</p>
                 </div>
                 <div class="reward-icon">
-                  <i class="fa-solid fa-circle-info"></i>
+                  <img class="visible" src="assets/icons/visibility.png" alt="">
+                  <img class="non-visible" src="assets/icons/eye.png" alt="">
                 </div>
               </div>
               <div class="rewards">
@@ -710,8 +747,16 @@
 
           <!---------- WATCH ME TAB CONTENT STARTS HERE----------------->
           <div id="watch-me" class="content-section" style="display: none;">
-            <h2>Watch Me Content</h2>
+            <div>
+              <h2>sort request</h2>
             <p>This is the content for the Watch Me tab.</p>
+            </div>
+            <div>
+              <h2>my request</h2>
+              <p>starts in progress</p>
+              <small><p>33mins ago</p></small>
+            </div>
+            
           </div>
           <!---------- WATCH ME TAB CONTENT ENDS HERE----------------->
 
@@ -724,8 +769,96 @@
             <p>This is the content for the Location tab.</p>
           </div>
           <div id="message" class="content-section" style="display: none;">
-            <h2>Message Content</h2>
-            <p>This is the content for the Message tab.</p>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="message-picture">
+                  <img src="assets/images/round_profil_picture_after_.webp" alt="">
+                </div>
+                <div class="message-contact">
+                <small><h2>phone contact</h2></small>
+                <p>message message message</p>
+                </div>
+              </div>
+              <div class="message-time">
+                <p>3:05PM</p>
+                <span>seen</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -743,19 +876,35 @@
       <div class="main-nav">
         <ul class="mainnav-tabs">
           <div class="menu-open" id="menu-open">
-            <i class="fa-solid fa-bars"></i>
+            <img src="assets/icons/menu.png" alt="">
           </div>
-          <li>
-            <a href="#" class="tab active"><i class="fas fa-home"></i> General</a>
+          <li class="tab" id="main-li">
+            <div class="main-icon">
+              <img class="main-icon" id="img1" src="assets/icons/open-book (1).png" alt="">
+              <img class="main-icon" id="img2" src="assets/icons/book.png" alt="">
+            </div>
+            <span class="">general</span>
           </li>
-          <li>
-            <a href="#" class="tab"><i class="fa-brands fa-gratipay"></i></i> Tips</a>
+          <li class="tab" id="main-li">
+            <div class="main-icon">
+              <img class="main-icon" id="img1" src="assets/icons/tip.png" alt="">
+              <img class="main-icon" id="img2" src="assets/icons/tips.png" alt="">
+            </div>
+            <span class="">tips</span>
           </li>
-          <li>
-            <a href="#" class="tab"><i class="fa-regular fa-lightbulb"></i></i> Palspiration</a>
+          <li class="tab" id="main-li">
+            <div class="main-icon">
+              <img class="main-icon" id="img1" src="assets/icons/friends-1.png" alt="">
+              <img class="main-icon" id="img2" src="assets/icons/friends.png" alt="">
+            </div>
+            <span class="">palspiration</span>
           </li>
-          <li>
-            <a href="#" class="tab"><i class="fas fa-comments"></i> Chatter</a>
+          <li class="tab" id="main-li">
+            <div class="main-icon">
+              <img class="main-icon" id="img1" src="assets/icons/chat (1).png" alt="">
+              <img class="main-icon" id="img2" src="assets/icons/chat.png" alt="">
+            </div>
+            <span class="">chatter</span>
           </li>
         </ul>
         <div class="search-bar">
@@ -768,7 +917,7 @@
       </div>
     </div>
     <div class="main-container">
-
+      <!----=========main cards section=============================-->
       <div class="main-card">
         <div class="card">
           <div class="card-details">
@@ -778,13 +927,15 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+              <img src="assets/icons/thunder.png" alt="">
+              <img src="assets/icons/idea.png" alt="">
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -794,11 +945,75 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-details">
+            <div class="card-heading">
+              <div class="card-profile">
+                <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
+              </div>
+              <div>
+                <h2>uduakabasi bernard</h2>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
+              </div>
+            </div>
+            <div class="card-icons">
+              <img src="assets/icons/thunder.png" alt="">
+              <img src="assets/icons/idea.png" alt="">
+              <img src="assets/icons/dots.png" alt="">
+            </div>
+          </div>
+          <div class="card-body">
+            <p>What you believe in works for you you so have a positive believe</p>
+          </div>
+          <div class="card-divider">
+          </div>
+          <div>
+            <div class="card-reactions">
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -811,13 +1026,15 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+              <img src="assets/icons/thunder.png" alt="">
+              <img src="assets/icons/idea.png" alt="">
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -827,83 +1044,33 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-details">
-            <div class="card-heading">
-              <div class="card-profile">
-                <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
               </div>
-              <div>
-                <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
               </div>
-            </div>
-            <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-          </div>
-          <div class="card-body">
-            <p>What you believe in works for you you so have a positive believe</p>
-          </div>
-          <div class="card-divider">
-          </div>
-          <div>
-            <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-details">
-            <div class="card-heading">
-              <div class="card-profile">
-                <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
               </div>
-              <div>
-                <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
               </div>
-            </div>
-            <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
-            </div>
-          </div>
-          <div class="card-body">
-            <p>What you believe in works for you you so have a positive believe</p>
-          </div>
-          <div class="card-divider">
-          </div>
-          <div>
-            <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="main-card">
+<!----=========main cards section=============================-->
+      <!----=========advert cards section=============================-->
+      <div class="advert-card">
         <div class="card">
           <div class="card-details">
             <div class="card-heading">
@@ -912,13 +1079,13 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -928,11 +1095,26 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -945,13 +1127,14 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -961,11 +1144,26 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -978,13 +1176,13 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -994,11 +1192,26 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
@@ -1011,13 +1224,13 @@
               </div>
               <div>
                 <h2>uduakabasi bernard</h2>
-                <p>about 1 hour ago</p>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
               </div>
             </div>
             <div class="card-icons">
-              <i class="fa-solid fa-bolt"></i>
-              <i class="fa-regular fa-lightbulb"></i>
-              <i class="fa-solid fa-ellipsis"></i>
+              <img src="assets/icons/dots.png" alt="">
             </div>
           </div>
           <div class="card-body">
@@ -1027,24 +1240,41 @@
           </div>
           <div>
             <div class="card-reactions">
-              <i class="fa-solid fa-heart"><span>2</span></i>
-              <i class="fa-solid fa-smile"><span>0</span> </i>
-              <i class="fa-solid fa-heart-broken"><span>0</span></i>
-              <i class="fa-solid fa-sad-tear"><span>0</span></i>
-              <i class="fa-solid fa-comment"><span>0</span></i>
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
+       <!----=========advert cards section=============================-->
     </div>
-  </div>
-  <!--------------------- --- MAIN CONTENT-------------------------------->
+    <!--------------------- --- MAIN CONTENT-------------------------------->
 
 
 
-  <script src="js/tabs.js"></script>
-  <script src="js/submenu.js"></script>
-  <script src="js/menu.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/submenu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/tabscroll.js"></script>
+    <script src="js/reveal.js"></script>
 
 
 </body>
