@@ -1137,7 +1137,7 @@ img {
         text-transform: capitalize;
         color: rgb(255, 255, 255);
         font-weight: 500;
-        font-size: 13px;
+        font-size: 15px;
       }
   
       & #img2 {
@@ -1159,8 +1159,8 @@ img {
     }
   
     & .main-icon {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       margin-right: 2px;
       display: flex;
       align-items: center;
