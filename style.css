@@ -106,7 +106,6 @@ li {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    color: white;
   }
 }
 
@@ -325,8 +324,9 @@ h2 {
 }
 
 .notification-details {
-  margin-left: 20Fpx;
+  margin-left: 20px;
   font-size: 10px;
+  
 }
 
 .notification-time {
@@ -335,10 +335,10 @@ h2 {
 }
 
 .notification-picture {
-  width: 60px;
-  height: 60px;
+  
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin-right: 30px;
   overflow: hidden;
 }
 
@@ -562,11 +562,10 @@ h2 {
   background-color: #0aa565;
   position: sticky;
   top: 0;
-  position: relative;
 }
 
 .main-nav {
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -783,11 +782,12 @@ img {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-color: #f08b39;
+  background-color: #02031a;
   margin-bottom: 15px;
   border-radius: 1px;
   margin: 5px;
   text-align: center;
+  color: white;
 }
 
 .card-divider {
@@ -1185,9 +1185,12 @@ img {
     display: none;
   }
 
-  .main-nav {
-    height: 80px;
-  }
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
 
   .mainnav-tabs {
     margin-left: 0px;
@@ -1206,7 +1209,7 @@ img {
         text-transform: capitalize;
         color: rgb(255, 255, 255);
         font-weight: 500;
-        font-size: 13px;
+        font-size: 15px;
       }
 
       & #img2 {
@@ -1228,8 +1231,8 @@ img {
     }
 
     & .main-icon {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       margin-right: 2px;
       display: flex;
       align-items: center;
