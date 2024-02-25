@@ -114,7 +114,6 @@ li {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    color: white;
   }
 }
 
@@ -608,7 +607,7 @@ h2 {
 
 
 .main-nav {
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1202,7 +1201,7 @@ img {
   .menu-open {
     display: flex;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
 
   }
 
