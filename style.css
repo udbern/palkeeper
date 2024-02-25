@@ -17,7 +17,6 @@ li {
 /*  SIDE-BAR STYLING */
 .sidebar {
   padding: 10px;
-
 }
 
 .sidebar-header {
@@ -25,9 +24,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
 
 .logo {
   max-width: 50px;
@@ -41,7 +38,6 @@ li {
     display: flex;
     justify-content: center;
   }
-
 }
 
 .sidebar-profile {
@@ -50,8 +46,6 @@ li {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-
-
 }
 
 .sidebar-profile img {
@@ -66,7 +60,6 @@ li {
   justify-content: center;
   justify-content: space-between;
   gap: 1rem;
-
 }
 
 .icon-settings,
@@ -74,7 +67,8 @@ li {
 .icon-tickets {
   width: 20px;
   height: 20px;
-  filter: invert(0%) sepia(99%) saturate(12%) hue-rotate(22deg) brightness(93%) contrast(95%);
+  filter: invert(0%) sepia(99%) saturate(12%) hue-rotate(22deg) brightness(93%)
+    contrast(95%);
 }
 
 .user-details {
@@ -88,8 +82,6 @@ li {
   }
 }
 
-
-
 .sidesection {
   position: fixed;
   width: 400px;
@@ -102,12 +94,12 @@ li {
   padding: 5px;
 }
 
-
 .menu-close,
 .menu-open {
   display: none;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 
   & img {
     width: 100%;
@@ -118,7 +110,6 @@ li {
   }
 }
 
-
 .user-contact {
   margin-top: 5px;
   display: flex;
@@ -126,8 +117,6 @@ li {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-
-
 }
 
 .user-tabsection {
@@ -138,6 +127,8 @@ li {
   justify-content: center;
   gap: 10px;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tabs {
@@ -147,21 +138,22 @@ li {
   gap: 15px;
   scroll-behavior: smooth;
   overflow: hidden;
-  padding-left: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .tab {
   display: flex;
   align-items: center;
   cursor: pointer;
-
-
 }
 
 .tab img {
   width: 20px;
   height: 20px;
-  filter: invert(0%) sepia(99%) saturate(12%) hue-rotate(45deg) brightness(93%) contrast(95%);
+  filter: invert(0%) sepia(99%) saturate(12%) hue-rotate(45deg) brightness(93%)
+    contrast(95%);
 }
 
 .tab-name {
@@ -180,9 +172,8 @@ li {
 .tab.active .tab-name {
   display: flex;
 
-  color: #0AA565;
+  color: #0aa565;
 }
-
 
 .tab:hover {
   color: #026d02;
@@ -210,13 +201,10 @@ li {
   /* Added spacing between icon and name */
 }
 
-
 .menu-divide {
   height: 1px;
   background-color: #030303;
 }
-
-
 
 .tab-content-wrapper {
   overflow-y: auto;
@@ -229,7 +217,6 @@ li {
   padding-top: 20px;
   margin-top: 20px;
 }
-
 
 .settings-menu {
   display: flex;
@@ -245,22 +232,17 @@ li {
   gap: 20px;
   margin-top: 50px;
   width: 100%;
-
 }
 
 .setting-icon {
   display: flex;
   align-items: center;
 
-
-
-
   & a {
     display: flex;
     align-items: center;
     margin-left: 20px;
     width: 100%;
-
   }
 
   & .chevron-right {
@@ -278,21 +260,22 @@ li {
   text-decoration: none;
 }
 
-
 .settings {
   font-size: 15px;
   font-weight: 700;
 }
 
-
 .submenu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin-top: 5px;
   margin-left: 30px;
   list-style-type: none;
   animation: slide-in 0.5s ease-in-out;
+
+  & li {
+    padding-top: 10px;
+  }
 }
 
 @keyframes slide-in {
@@ -323,7 +306,6 @@ h2 {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 400;
-
 }
 
 .notification-secttion,
@@ -342,12 +324,10 @@ h2 {
   border-bottom: rgb(192, 191, 191) solid 1px;
 }
 
-
 .notification-details {
   margin-left: 20Fpx;
   font-size: 10px;
 }
-
 
 .notification-time {
   display: flex;
@@ -360,7 +340,6 @@ h2 {
   border-radius: 50%;
   margin-right: 30px;
   overflow: hidden;
-
 }
 
 .notification-profile {
@@ -379,10 +358,7 @@ h2 {
     color: #026d02;
     font-size: 15px;
   }
-
-
 }
-
 
 /*SERVICES SECTION STYLING STARTS HERE*/
 #service {
@@ -393,7 +369,6 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
-
   }
 }
 
@@ -420,10 +395,7 @@ h2 {
     height: 100%;
     object-fit: contain;
     object-position: center;
-
   }
-
-
 }
 
 .icon-grid p {
@@ -443,7 +415,6 @@ h2 {
   align-items: center;
   flex-direction: row-reverse;
   margin: 10px 20px 0 20px;
-
 }
 
 /*SERVICES SECTION STYLING ENDS HERE*/
@@ -462,9 +433,7 @@ h2 {
   color: white;
   text-align: center;
   line-height: 20px;
-
 }
-
 
 .reward-icon .visible {
   display: block;
@@ -521,7 +490,7 @@ h2 {
 }
 
 .redeemed-reward .redeems {
-  color: #C42026;
+  color: #c42026;
 }
 
 .redeemed-reward .redeem {
@@ -533,7 +502,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .tab-redeemed,
@@ -565,8 +533,6 @@ h2 {
 .reward-profile {
   display: flex;
   align-items: center;
-
-
 }
 
 .reward-picture {
@@ -578,17 +544,12 @@ h2 {
     height: 100%;
     object-fit: contain;
     object-position: center;
-
   }
-
-
 }
 
 .reward-name {
   font-size: 12px;
-
 }
-
 
 /*MAIN-CONTENT SECTION STYLING STARTS HERE*/
 .main-content {
@@ -598,14 +559,11 @@ h2 {
 }
 
 .main-header {
-  background-color: #0AA565;
+  background-color: #0aa565;
   position: sticky;
   top: 0;
-
-
-
+  position: relative;
 }
-
 
 .main-nav {
   height: 70px;
@@ -614,15 +572,14 @@ h2 {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-
-
 }
 
 .mainnav-tabs {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 7px;
+  gap: 10px;
+  margin-left: 30px;
 
   & #main-li {
     display: flex;
@@ -641,7 +598,7 @@ h2 {
 
     & #img2 {
       display: none;
-      color: #F08B39;
+      color: #f08b39;
     }
 
     &:hover #img1 {
@@ -666,14 +623,10 @@ h2 {
   }
 }
 
-
-
-
 .search-bar {
   position: relative;
   border-radius: 20px;
   height: 35px;
-  
 }
 
 .search-bar input {
@@ -706,10 +659,7 @@ h2 {
   margin-left: 5px;
   outline: none;
   transition: opacity 0.3s ease;
-  
 }
-
-
 
 .logout {
   margin: auto;
@@ -721,7 +671,6 @@ h2 {
   border-radius: 5px;
 }
 
-
 .logout {
   margin: auto;
   font-size: 16px;
@@ -729,33 +678,33 @@ h2 {
   color: #fffdfd;
 }
 
-
-
 .main-container {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+
+  flex-wrap: wrap;
+
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   /* Increased padding */
-  gap: 20px;
+  gap: 5px;
   /* Increased gap */
 }
 
 .main-card {
+  flex: 2;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
   scrollbar-width: none;
-
 }
 
 .advert-card {
+  flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
   scrollbar-width: none;
 }
-
 
 .card {
   width: 100%;
@@ -763,8 +712,7 @@ h2 {
   transition: transform 1s ease;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   border: #f3eeef solid 1px;
- border-radius: 5px;
-
+  border-radius: 5px;
 }
 
 .card-details {
@@ -773,7 +721,6 @@ h2 {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .card-heading {
@@ -782,10 +729,12 @@ h2 {
   gap: 20px;
   padding: 2px;
 
-
   & h2 {
     text-transform: capitalize;
+  }
 
+  & p {
+    color: #b1b1b1;
   }
 }
 
@@ -815,7 +764,8 @@ img {
   }
 
   & img:hover {
-    filter: invert(35%) sepia(28%) saturate(1698%) hue-rotate(104deg) brightness(97%) contrast(97%);
+    filter: invert(35%) sepia(28%) saturate(1698%) hue-rotate(104deg)
+      brightness(97%) contrast(97%);
     transform: translateY(-5px);
     transition: transform 1s ease-in-out;
     border: #333 1px solid;
@@ -843,7 +793,6 @@ img {
 .card-divider {
   height: 1px;
   background-color: #c5c5c5;
-
 }
 
 .card-reactions {
@@ -851,17 +800,16 @@ img {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  
+
   margin-top: 10px;
   margin-bottom: 10px;
-  
 
-  & .reaction{
+  & .reaction {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+
     &:hover {
       transform: translateY(-5px);
       transition: transform 0.4s ease;
@@ -873,16 +821,124 @@ img {
       height: 20px;
     }
 
-    & span{
+    & span {
       font-size: 14px;
-      color: #0AA565;
-
+      color: #0aa565;
     }
-  
+  }
+}
 
+.advertcard-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.advertcard-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2px;
+
+  & h2 {
+    text-transform: capitalize;
   }
 
-  
+  & p {
+    color: #b1b1b1;
+  }
+}
+
+.advertcard-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.advertcard-icons {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  & img {
+    width: 25px;
+    height: 25px;
+  }
+
+  & img:hover {
+    filter: invert(35%) sepia(28%) saturate(1698%) hue-rotate(104deg)
+      brightness(97%) contrast(97%);
+    transform: translateY(-5px);
+    transition: transform 1s ease-in-out;
+    border: #333 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 1px 5px 5px #d1d0d0;
+  }
+}
+
+.advertcard-body {
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #f08b39;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  margin: 5px;
+  text-align: center;
+}
+
+.advertcard-divider {
+  height: 1px;
+  background-color: #dfdbdb;
+}
+
+.advertcard-reactions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & .reaction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: transform 0.4s ease;
+    }
+    gap: 5px;
+
+    & img {
+      width: 12px;
+      height: 12px;
+    }
+
+    & span {
+      font-size: 12px;
+      color: #0aa565;
+    }
+  }
 }
 
 .clip {
@@ -891,7 +947,6 @@ img {
   transition: transform 0.4s ease;
   height: 100%;
   background-color: white;
-
 }
 
 .clip-details {
@@ -900,7 +955,6 @@ img {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .clip-heading {
@@ -908,7 +962,6 @@ img {
   align-items: center;
   gap: 20px;
   padding: 2px;
-
 
   & h2,
   p {
@@ -941,7 +994,6 @@ img {
     color: #026d02;
     transform: translateY(-5px);
     transition: transform 0.4s ease-in-out;
-
   }
 }
 
@@ -989,7 +1041,6 @@ img {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-top: 10px;
-
 }
 
 .clip-reactions {
@@ -999,7 +1050,6 @@ img {
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-
 
   & i {
     font-size: 12px;
@@ -1015,14 +1065,10 @@ img {
       color: #026d02;
       font-weight: 400;
     }
-
-
   }
-
 }
 
-
-.messages{
+.messages {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1032,17 +1078,17 @@ img {
   border-bottom: #d3d1d1 1px solid;
 }
 
-.message{
+.message {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
 }
-.message-picture{
+.message-picture {
   width: 30px;
   height: 30px;
 
-  & img{
+  & img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1050,111 +1096,137 @@ img {
   }
 }
 
-.message-contact{
- font-size: 14px;
-
+.message-contact {
+  font-size: 14px;
 }
 
-.message-time{
+.message-time {
   font-size: 12px;
-  & span{
-    color: #0AA565;
+  & span {
+    color: #0aa565;
   }
 }
 
+.watch {
+  background-color: #fcfcfc;
+  padding: 20px;
+  margin-top: 10px;
+  border-bottom: #cccbcb 1px solid;
+}
+.watch-heading {
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+.watch-status {
+  display: flex;
+  justify-content: space-between;
+
+  & h2 {
+    color: #0aa565;
+    text-transform: capitalize;
+  }
+}
+
+.watch-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.watch-profile {
+  display: flex;
+  align-items: center;
+
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+
+  & span {
+    margin-left: 10px;
+  }
+}
+
+.post {
+  
+}
+.post-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin-top: 20px;
+  border-bottom: #bdbcbc solid 1px;
+
+  & img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
 
-
-  
-
- 
   .main-card,
   .advert-card {
-    overflow-y: visible;
-    height: auto;
+    flex: auto;
+    width: 100%;
   }
-
-  .main-container {
-    grid-template-columns: 1fr;
-  }
-  
-  .main-card {
-    order: 1;
-  }
-
-  .advert-card {
-    order: 2;
-  }
-
-  .main-card:nth-of-type(2n) {
-    order: 3;
-  }
-
-  .advert-card:nth-of-type(2n) {
-    order: 4;
-  }
-
-
-  .logout {
-    font-size: 14px;
-    text-transform: none;
-    
-    
-  }
-
-
-  .search-bar {
-    display: none;
-  }
-
-
-
-
 }
 
 @media only screen and (max-width: 1024px) {
+  .logout {
+    display: none;
+  }
+
+  .main-nav {
+    height: 80px;
+  }
 
   .mainnav-tabs {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 7px;
-  
+    margin-left: 0px;
+
     & #main-li {
       display: flex;
+      flex-direction: column;
       align-items: center;
       transition: transform 0.3s;
-  
+
       &:hover {
         transform: translateY(-5px);
       }
-  
+
       & span {
         text-transform: capitalize;
         color: rgb(255, 255, 255);
         font-weight: 500;
         font-size: 13px;
       }
-  
+
       & #img2 {
         display: none;
-        color: #F08B39;
+        color: #f08b39;
       }
-  
+
       &:hover #img1 {
         display: none;
       }
-  
+
       &:hover #img2 {
         display: flex;
       }
-  
+
       &:hover span {
         color: black;
       }
     }
-  
+
     & .main-icon {
       width: 16px;
       height: 16px;
@@ -1164,56 +1236,33 @@ img {
     }
   }
 
-
-
   .card-icons {
-    & img{
+    & img {
       width: 20px;
       height: 20px;
     }
-    
-  
-    
   }
 
   .main-content {
     width: 100%;
     left: 0;
-
   }
 
   .sidesection {
     display: none;
-    
   }
-  
+
   .menu-close {
     display: flex;
     margin-left: 350px;
-    
   }
 
   .menu-open {
     display: flex;
     font-size: 20px;
-    margin-left: 10px;
-
   }
 
   .card {
-
     margin-top: 20px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 }

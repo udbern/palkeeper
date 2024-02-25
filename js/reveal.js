@@ -8,11 +8,10 @@ rewardIcon.addEventListener('click', function() {
     if (visibleIcon.style.display === 'block') {
         visibleIcon.style.display = 'none';
         nonVisibleIcon.style.display = 'block';
-        totalRewards.innerHTML = '****'; // Display **** when icons are toggled to non-visible
+        totalRewards.style.filter = 'blur(5px)'; // Apply blur effect when icons are toggled to non-visible
     } else {
         visibleIcon.style.display = 'block';
         nonVisibleIcon.style.display = 'none';
-        totalRewards.innerHTML = 'Actual content here'; // Display actual content when icons are toggled to visible
+        totalRewards.style.filter = 'none'; // Remove blur effect when icons are toggled to visible
     }
 });
-
