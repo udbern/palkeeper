@@ -39,69 +39,75 @@
           <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
         </div>
         <div class="sidebar-tabs">
-          <div class="tab" data-content="settings">
-            <img class="icon-settings" src="assets/icons/settings (1).png" alt="">
+          <div class="tab" id="icon-icon" data-content="settings">
+            <img class="icon-settings" src="assets/icons/main-setting.png" alt="">
           </div>
-          <div class="tab" data-content="tickets">
-            <img class="icon-tickets" src="assets/icons/laptop.png" alt="">
+          <div class="tab" id="icon-icon" data-content="tickets">
+            <img class="icon-tickets" src="assets/icons/main-monitor.png" alt="">
           </div>
-          <div class="tab" data-content="notifications">
-            <img class="icon-notification" src="assets/icons/notification-1.png" alt="">
+          <div class="tab" id="icon-icon" data-content="notifications">
+            <img class="icon-notifications" src="assets/icons/main-notification.png" alt="">
           </div>
         </div>
       </div>
-      <!--------sidebar header---------------------------->
+      <!--------sidebar================ header---------------------------->
 
-      <!--------sidebar user details---------------------------->
+      <!--------sidebar====== user======================details---------------------------->
       <div class="user-details">
         <p>palkeeper <span>John Doe</span></p>
         <div class="user-contact">
           <p>john@example.com</p>
           <p> 123-456-7890</p>
         </div>
-        <p> Joined January 1, 2022</p>
+        <p> Joined January 1, 2022</p>\
+        <div>
+          <a href="#" class="logout"> logout</a>
+        </div>
       </div>
-      <!--------sidebar user details---------------------------->
+      <!--------sidebar============== user============ =details----===================--->
 
-      <!--------user tab section---------------------------->
-      <div class="user-tabsection">
+      <!-----=============-user=== tab====== section---=======--==============---->
+      <div class="scrolltab-section">
         <img src="assets/icons/back.png" id="icon-arrow" class="icon-back" alt="arrow-left.png">
-        <div class="tabs">
-          <div class="tab active" data-content="service">
-            <img class="icon-tab1" src="assets/icons/technical-support.png" alt="service.png">
-            <span class="tab-name">service</span>
-          </div>
-          <div class="tab" data-content="pals">
-            <img class="icon-tab2" src="assets/icons/people.png" alt="pals.png">
-            <span class="tab-name">pals</span>
-          </div>
-          <div class="tab" data-content="clips">
-            <img class="icon-tab3" src="assets/icons/paperclip.png" alt="">
-            <span class="tab-name">clips</span>
-          </div>
-          <div class="tab" data-content="wallet">
-            <img class="icon-tab3" src="assets/icons/cash-managements.png" alt="">
-            <span class="tab-name">wallet</span>
-          </div>
-          <div class="tab" data-content="watch-me">
-            <img class="icon-tab3" src="assets/icons/searching.png" alt="">
-            <span class="tab-name">watch</span>
-          </div>
-          <div class="tab" data-content="post">
-            <img class="icon-tab3" src="assets/icons/online.png" alt="">
-            <span class="tab-name">post</span>
-          </div>
-          <div class="tab" data-content="blacklist">
-            <img class="icon-tab3" src="assets/icons/location.png" alt="">
-            <span class="tab-name">blacklist</span>
-          </div>
-          <div class="tab" data-content="message">
-            <img class="icon-tab3" src="assets/icons/chatting.png" alt="">
-            <span class="tab-name">message</span>
+        <div class="user-tabsection">
+          <div class="tabs">
+            <div class="tab active" data-content="service">
+              <img class="icon-tab1" src="assets/icons/technical-support.png" alt="service.png">
+              <span class="tab-name">service</span>
+            </div>
+            <div class="tab" data-content="pals">
+              <img class="icon-tab2" src="assets/icons/people.png" alt="pals.png">
+              <span class="tab-name">pals</span>
+            </div>
+            <div class="tab" data-content="clips">
+              <img class="icon-tab3" src="assets/icons/paperclip.png" alt="">
+              <span class="tab-name">clips</span>
+            </div>
+            <div class="tab" data-content="wallet">
+              <img class="icon-tab3" src="assets/icons/cash-managements.png" alt="">
+              <span class="tab-name">wallet</span>
+            </div>
+            <div class="tab" data-content="watch-me">
+              <img class="icon-tab3" src="assets/icons/searching.png" alt="">
+              <span class="tab-name">watch</span>
+            </div>
+            <div class="tab" data-content="post">
+              <img class="icon-tab3" src="assets/icons/online.png" alt="">
+              <span class="tab-name">post</span>
+            </div>
+            <div class="tab" data-content="blacklist">
+              <img class="icon-tab3" src="assets/icons/location.png" alt="">
+              <span class="tab-name">blacklist</span>
+            </div>
+            <div class="tab" data-content="message">
+              <img class="icon-tab3" src="assets/icons/chatting.png" alt="">
+              <span class="tab-name">message</span>
+            </div>
           </div>
         </div>
         <img src="assets/icons/next.png" id="icon-arrow" class="icon-right" alt="arrow-right.png">
       </div>
+      
       <!--------user tab section---------------------------->
 
 
@@ -381,60 +387,77 @@
             <h2>services</h2>
             <div class="icon-grid">
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/accumulator.png" alt="battery.png">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/accumulator.png" alt="battery.png">
+                  </div>
+                  <p>jump battery</p>
                 </div>
-                <p>jump battery</p>
+              </div>
+              
+              <div class="icon">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/flat-tire.png" alt="">
+                  </div>
+                  <p>flat tire</p>
+                </div>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/flat-tire.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/dispenser.png" alt="">
+                  </div>
+                  <p>fuel out</p>
                 </div>
-
-                <p>flat tire</p>
+                </div>
+              <div class="icon">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/tow-truck.png" alt="">
+                  </div>
+                  <p>towing</p>
+                </div>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/dispenser.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="./assets/icons/key.png" alt="">
+                  </div>
+                  <p>key lockout</p>
                 </div>
-
-                <p>fuel out</p>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/tow-truck.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/inspection.png" alt="">
+                  </div>
+                  <p>OBD</p>
                 </div>
-                <p>towing</p>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="./assets/icons/key.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/generator.png" alt="">
+                  </div>
+                  <p>fuel</p>
                 </div>
-                <p>key lockout</p>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/inspection.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/house-keeping.png" alt="">
+                  </div>
+                  <p>chores</p>
                 </div>
-                <p>OBD</p>
               </div>
               <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/generator.png" alt="">
+                <div class="icon-service">
+                  <div class="img-icon">
+                    <img src="assets/icons/bullhorn.png" alt="">
+                  </div>
+                  <p>advertise</p>
                 </div>
-                <p>fuel</p>
-              </div>
-              <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/house-keeping.png" alt="">
-                </div>
-                <p>chores</p>
-              </div>
-              <div class="icon">
-                <div class="img-icon">
-                  <img src="assets/icons/bullhorn.png" alt="">
-                </div>
-                <p>advertise</p>
               </div>
             </div>
           </div>
@@ -910,10 +933,10 @@
                     <p>about 1 hour ago</p>
                   </div>
                 </div>
-                <div class="clip-icons">
-                  <i class="fa-solid fa-bolt"></i>
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <i class="fa-solid fa-ellipsis"></i>
+                <div class="card-icons">
+                  <img src="assets/icons/thunder.png" alt="">
+                  <img src="assets/icons/idea.png" alt="">
+                  <img src="assets/icons/dots.png" alt="">
                 </div>
               </div>
               <p class="clip-tag">so true well said</p>
@@ -927,12 +950,27 @@
               <div class="clip-divider">
               </div>
               <div>
-                <div class="clip-reactions">
-                  <i class="fa-solid fa-heart"><span>2</span></i>
-                  <i class="fa-solid fa-smile"><span>0</span> </i>
-                  <i class="fa-solid fa-heart-broken"><span>0</span></i>
-                  <i class="fa-solid fa-sad-tear"><span>0</span></i>
-                  <i class="fa-solid fa-comment"><span>0</span></i>
+                <div class="card-reactions">
+                  <div class="reaction">
+                    <img src="assets/icons/heart.png" alt="">
+                    <span>2</span>
+                  </div>
+                  <div class="reaction">
+                    <img src="assets/icons/smiley.png" alt="">
+                    <span>0</span>
+                  </div>
+                  <div class="reaction">
+                    <img src="assets/icons/broken-heart.png" alt="">
+                    <span>0</span>
+                  </div>
+                  <div class="reaction">
+                    <img src="assets/icons/sad.png" alt="">
+                    <span>0</span>
+                  </div>
+                  <div class="reaction">
+                    <img src="assets/icons/message.png" alt="">
+                    <span>0</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1052,44 +1090,27 @@
     <div class="main-header">
       <div class="main-nav">
         <div class="menu-open" id="menu-open">
-          <img src="assets/icons/menu.png" alt="">
+          <img src="assets/icons/app.png" alt="">
         </div>
         <ul class="mainnav-tabs">
           <li class="tab" id="main-li">
-            <div class="main-icon">
-              <img class="main-icon" id="img1" src="assets/icons/open-book (1).png" alt="">
-              <img class="main-icon" id="img2" src="assets/icons/book.png" alt="">
-            </div>
-            <span class="">general</span>
+            <h2>general</h2>
           </li>
           <li class="tab" id="main-li">
-            <div class="main-icon">
-              <img class="main-icon" id="img1" src="assets/icons/tip.png" alt="">
-              <img class="main-icon" id="img2" src="assets/icons/tips.png" alt="">
-            </div>
-            <span class="">tips</span>
+            <h2>tips</h2>
           </li>
           <li class="tab" id="main-li">
-            <div class="main-icon">
-              <img class="main-icon" id="img1" src="assets/icons/friends.png" alt="">
-              <img class="main-icon" id="img2" src="assets/icons/friends-1.png" alt="">
-            </div>
-            <span class="">palspiration</span>
+            <h2>palspiration</h2>
           </li>
           <li class="tab" id="main-li">
-            <div class="main-icon">
-              <img class="main-icon" id="img1" src="assets/icons/chat (1).png" alt="">
-              <img class="main-icon" id="img2" src="assets/icons/chat.png" alt="">
-            </div>
-            <span class="">chatter</span>
+            <h2>chatter</h2>
           </li>
         </ul>
         <div class="search-bar">
           <input type="text" placeholder="Search..." />
-          <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
-        <div>
-          <a href="#" class="logout"> logout</a>
+          <button type="submit">
+            <img src="assets/icons/find.png" alt="">
+          </button>
         </div>
       </div>
     </div>
@@ -1255,7 +1276,7 @@
                 <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
               </div>
               <div>
-                <h2>uduakabasi bernard</h2>
+                <h2>simon</h2>
                 <small>
                   <p>about 1 hour ago</p>
                 </small>
@@ -1271,7 +1292,7 @@
           <div class="card-divider">
           </div>
           <div>
-            <div class="card-reactions">
+            <div class="advertcard-reactions">
               <div class="reaction">
                 <img src="assets/icons/heart.png" alt="">
                 <span>2</span>
@@ -1296,59 +1317,10 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-details">
-            <div class="card-heading">
-              <div class="card-profile">
-                <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
-              </div>
-              <div>
-                <h2>uduakabasi bernard</h2>
-                <small>
-                  <p>about 1 hour ago</p>
-                </small>
-              </div>
-            </div>
-            <div class="card-icons">
-
-              <img src="assets/icons/dots.png" alt="">
-            </div>
-          </div>
-          <div class="card-body">
-            <p>What you believe in works for you you so have a positive believe</p>
-          </div>
-          <div class="card-divider">
-          </div>
-          <div>
-            <div class="card-reactions">
-              <div class="reaction">
-                <img src="assets/icons/heart.png" alt="">
-                <span>2</span>
-              </div>
-              <div class="reaction">
-                <img src="assets/icons/smiley.png" alt="">
-                <span>0</span>
-              </div>
-              <div class="reaction">
-                <img src="assets/icons/broken-heart.png" alt="">
-                <span>0</span>
-              </div>
-              <div class="reaction">
-                <img src="assets/icons/sad.png" alt="">
-                <span>0</span>
-              </div>
-              <div class="reaction">
-                <img src="assets/icons/message.png" alt="">
-                <span>0</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-details">
-            <div class="card-heading">
-              <div class="card-profile">
+        <div class="card-advert">
+          <div class="advertcard-details">
+            <div class="advertcard-heading">
+              <div class="advertcard-profile">
                 <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
               </div>
               <div>
@@ -1392,11 +1364,57 @@
             </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-details">
-            <div class="card-heading">
-              <div class="card-profile">
+        <div class="card-advert">
+          <div class="advertcard-details">
+            <div class="advertcard-heading">
+              <div class="advertcard-profile">
+                <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
+              </div>
+              <div>
+                <h2>uduakabasi bernard</h2>
+                <small>
+                  <p>about 1 hour ago</p>
+                </small>
+              </div>
+            </div>
+            <div class="card-icons">
+              <img src="assets/icons/dots.png" alt="">
+            </div>
+          </div>
+          <div class="card-body">
+            <p>What you believe in works for you you so have a positive believe</p>
+          </div>
+          <div class="card-divider">
+          </div>
+          <div>
+            <div class="card-reactions">
+              <div class="reaction">
+                <img src="assets/icons/heart.png" alt="">
+                <span>2</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/smiley.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/broken-heart.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/sad.png" alt="">
+                <span>0</span>
+              </div>
+              <div class="reaction">
+                <img src="assets/icons/message.png" alt="">
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-advert">
+          <div class="advertcard-details">
+            <div class="advertcard-heading">
+              <div class="advertcard-profile">
                 <img src="assets/images/round_profil_picture_after_.webp" alt="Profile Picture">
               </div>
               <div>
