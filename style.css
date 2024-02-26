@@ -16,7 +16,7 @@ li {
 
 /*  SIDE-BAR STYLING */
 .sidebar {
-  padding: 10px;
+  padding: 5px;
 }
 
 .sidebar-header {
@@ -92,6 +92,7 @@ li {
   }
 }
 
+
 .sidesection {
   position: fixed;
   width: 400px;
@@ -100,20 +101,10 @@ li {
   z-index: 1000;
   box-shadow: 1px 5px 5px #aaaaaa;
   background-color: #fefefe;
-  height: 100vh;
+  height: 100%;
   padding: 5px;
-  border: 1px solid red;
   overflow-y: auto; /* Add scrolling for vertical overflow */
-}
-
-/* Hide the scrollbar */
-.sidesection::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
-}
-
-/* Firefox */
-.sidesection {
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  scrollbar-width: thin; 
 }
 
 
@@ -265,8 +256,6 @@ li {
   height: 60vh;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-  margin-bottom: 10px;
-  border: blue solid 1px;
 }
 
 .contemtent-section {
